@@ -3,6 +3,7 @@ import heroOrnament from '../assets/images/heroOrnament.jpg';
 import Header from '../components/Header.js/Header';
 import Hero from '../components/Hero.js/Hero';
 import OurLocation from '../components/OurLocation/OurLocation';
+import OurServices from '../components/OurServices/OurServices';
 const Home = () => {
     return (
         <div>
@@ -15,6 +16,7 @@ const Home = () => {
                 <Header />
                 <Hero />
                 <OurLocation />
+                <OurServices />
             </div>
         </div>
     );
