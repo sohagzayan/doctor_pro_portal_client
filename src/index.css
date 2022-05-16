@@ -6,3 +6,68 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+.locationCard {
+  position: relative;
+  z-index: 99;
+  transition: 0.3s ease-in;
+}
+.locationCard::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: #f17732;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in;
+  border-radius: 16px;
+}
+.locationCard.active::before {
+  height: 100%;
+}
+.locationCard.active h2,
+.locationCard.active p,
+.locationCard.active .locationIcons {
+  color: white;
+}
+.locationCard.active .cardInnerIconsLocation {
+  background-color: #f17732;
+  color: white;
+}
+.locationCard.active::before {
+  height: 100%;
+}
+
+.locationCard:hover::before {
+  height: 100%;
+}
+.locationCard:hover h2 {
+  color: white;
+  transition: 0.3s ease-in;
+}
+.locationCard:hover .cardInnerIconsLocation {
+  color: white;
+  background-color: #f17732;
+  transition: 0.3s ease-in;
+}
+.locationCard:hover p {
+  color: white;
+  transition: 0.3s ease-in;
+}
+.locationCard:hover .locationIcons {
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.locationCard:hover .btn-location {
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+.cardInnerIconsLocation {
+  background-color: white;
+  padding: 8px 8px;
+  margin-left: 8px;
+  border-radius: 5px;
+}

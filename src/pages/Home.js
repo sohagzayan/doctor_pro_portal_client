@@ -2,6 +2,7 @@ import React from 'react';
 import heroOrnament from '../assets/images/heroOrnament.jpg';
 import Header from '../components/Header.js/Header';
 import Hero from '../components/Hero.js/Hero';
+import OurLocation from '../components/OurLocation/OurLocation';
 const Home = () => {
     return (
         <div>
@@ -13,6 +14,7 @@ const Home = () => {
             }} className=''>
                 <Header />
                 <Hero />
+                <OurLocation />
             </div>
         </div>
     );
