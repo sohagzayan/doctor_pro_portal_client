@@ -1,8 +1,9 @@
+import RootRoutes from "./routes/RootRoutes";
 function App() {
   return (
-    <div className="App">
-      <h1>Hello stack</h1>
-    </div>
+    <>
+        <RootRoutes />
+    </>
   );
 }
 
