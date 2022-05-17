@@ -5,6 +5,7 @@ import Header from "../components/Header.js/Header";
 import Hero from "../components/Hero.js/Hero";
 import OurLocation from "../components/OurLocation/OurLocation";
 import OurServices from "../components/OurServices/OurServices";
+import Testimonial from "../components/Testimonial/Testimonial";
 const Home = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const Home = () => {
       <OurLocation />
       <OurServices />
       <AboutUs />
+      <Testimonial />
     </div>
   );
 };

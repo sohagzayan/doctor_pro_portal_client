@@ -87,3 +87,39 @@ body {
   left: 10px;
   border-radius: 50px 50px 0 50px;
 }
+/* ⟶ */
+/* slider custom cursor  */
+.swiper-button-prev:after {
+  content: "⟵";
+}
+
+.swiper-button-prev {
+  top: 400px;
+}
+.swiper-button-next {
+  top: 400px;
+  left: 100px;
+}
+.swiper-button-next:after {
+  content: "⟶";
+}
+
+.swiper {
+  height: 450px;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+@media (max-width: 641px) {
+  .swiper {
+    height: 600px;
+    overflow: visible;
+    overflow-x: hidden;
+  }
+  .swiper-button-prev {
+    top: 350px;
+  }
+  .swiper-button-next {
+    top: 350px;
+  }
+}
