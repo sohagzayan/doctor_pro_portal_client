@@ -1,6 +1,8 @@
 import React from "react";
 import heroOrnament from "../assets/images/heroOrnament.jpg";
 import AboutUs from "../components/AboutUs/AboutUs";
+import ContactUs from "../components/ContactUs/ContactUs";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header.js/Header";
 import Hero from "../components/Hero.js/Hero";
 import OurLocation from "../components/OurLocation/OurLocation";
@@ -15,8 +17,9 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
+          width: "100%",
         }}
-        className=""
+    
       >
         <Header />
         <Hero />
@@ -25,6 +28,8 @@ const Home = () => {
       <OurServices />
       <AboutUs />
       <Testimonial />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

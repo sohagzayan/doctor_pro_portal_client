@@ -3,8 +3,8 @@ import heroImage from '../../assets/images/heroimage.png';
 import ornamentImg from '../../assets/images/lineStyle.png';
 const Hero = () => {
   return (
-    <div className="container mx-auto px-4">
-      <div class="hero min-h-screen ">
+    <div  className="container mx-auto px-4 ">
+      <div class="hero ">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img
             src={heroImage}

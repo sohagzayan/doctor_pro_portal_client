@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 const Header = () => {
   return (
@@ -26,55 +27,55 @@ const Header = () => {
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="text-secondary text-lg font-medium">Home</a>
+              <NavLink to="/" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>Home</NavLink>
             </li>
             <li>
-              <a className="text-secondary text-lg font-medium">Appointment</a>
+              <NavLink to="/appointment" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>Appointment</NavLink>
             </li>
             <li>
-              <a className="text-secondary text-lg font-medium">Reviews</a>
+              <NavLink to="/reviews" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>Reviews</NavLink>
             </li>
             <li>
-              <a className="text-secondary text-lg font-medium">Contact Us</a>
+              <NavLink to="/contactUs" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>Contact Us</NavLink>
             </li>
             <li>
-              <a className="text-secondary text-lg font-medium">Login</a>
+              <NavLink to="/login" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>Login</NavLink>
             </li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl font-semibold tracking-wide" href="/">
+        <NavLink class="btn btn-ghost normal-case text-xl font-semibold tracking-wide" to="/">
               <h3 className="flex items-center font-bold">
                 <img width="35px" className="mr-1" src={logo} alt="logo" />
                  <span className="mt-2 text-secondary">Doctor Portal</span>
               </h3>
-          </a>
+          </NavLink>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
+        <ul class="menu menu-horizontal s p-0">
           <li>
-            <a className="text-secondary text-lg font-bold  subpixel-antialiased	">
+            <NavLink  to="/home" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="text-secondary text-lg font-bold  subpixel-antialiased">
+            <NavLink to="/appointment" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>
               Appointment
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="text-secondary text-lg font-bold  subpixel-antialiased">
+            <NavLink to="/reviews" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>
               Reviews
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="text-secondary text-lg font-bold  subpixel-antialiased">
+            <NavLink to="/contactUs" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>
               Contact Us
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="text-secondary text-lg font-bold  subpixel-antialiased">
+            <NavLink to="/login" className={({isActive})=> isActive ? "text-warning bg-transparent  text-lg font-bold  subpixel-antialiased	" : "text-secondary bg-transparent  text-lg font-bold  subpixel-antialiased	"}>
               Login
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
