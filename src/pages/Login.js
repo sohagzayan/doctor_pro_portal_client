@@ -25,20 +25,20 @@ const Login = () => {
               <input
                 type="text"
                 placeholder="Email"
-                class="input input-bordered input-accent w-full mb-7"
+                className="input input-bordered input-accent w-full mb-7"
               />
               <input
                 type="text"
                 placeholder="Password"
-                class="input input-bordered input-accent w-full mb-7"
+                className="input input-bordered input-accent w-full mb-7"
               />
               <button className="bg-success justify-center px-10 py-2 text-lg font-bold text-center text-white flex  items-center  ">
                 <MdLogin className=" text-4xl mx-4" />{" "}
                 <span className="text-center">Sign In</span>
               </button>
               <p className="text-primary mt-4">Not Have a Account ?  <NavLink className="text-xl text-success font-bold cursor-pointer" to="/signup">SignUp</NavLink></p>
-              <div class="flex flex-col w-full border-opacity-50">
-                <div class="divider">OR</div>
+              <div className="flex flex-col w-full border-opacity-50">
+                <div className="divider">OR</div>
               </div>
               <GoogleButton
                 style={{ width: "100%" }}

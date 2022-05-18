@@ -26,18 +26,18 @@ const ContactUs = () => {
                     <img  src={gmail} alt="" />
               </div>
               <div className="flex flex-col w-9/12 lg:w-4/12 mt-10">
-              <input type="text" placeholder="Your Name" class="input border-2 border-secondary mb-8 input-bordered w-full " />
-              <input type="text" placeholder="Email" class="input mb-8  border-2 border-secondary input-bordered input-secondary w-full " />
-              <input type="text" placeholder="Phone Numbers" class="input  border-2 border-secondary  mb-8 input-bordered input-secondary w-full " />
-              <input type="text" placeholder="Selected Department" class="input  border-2 border-secondary mb-8 input-bordered input-secondary w-full " />
-              <select class="select w-full border-2 border-primary mb-6 ">
+              <input type="text" placeholder="Your Name" className="input border-2 border-secondary mb-8 input-bordered w-full " />
+              <input type="text" placeholder="Email" className="input mb-8  border-2 border-secondary input-bordered input-secondary w-full " />
+              <input type="text" placeholder="Phone Numbers" className="input  border-2 border-secondary  mb-8 input-bordered input-secondary w-full " />
+              <input type="text" placeholder="Selected Department" className="input  border-2 border-secondary mb-8 input-bordered input-secondary w-full " />
+              <select className="select w-full border-2 border-primary mb-6 ">
                 <option>Homer</option>
                 <option>Marge</option>
                 <option>Bart</option>
                 <option>Lisa</option>
                 <option>Maggie</option>
                 </select>
-              <textarea class="textarea  border-2 border-primary" placeholder="Type Message"></textarea>
+              <textarea className="textarea  border-2 border-primary" placeholder="Type Message"></textarea>
               </div>
 
           </div>
