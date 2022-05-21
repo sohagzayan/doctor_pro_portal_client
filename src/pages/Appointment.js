@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AppointmentHero from '../components/AppointmentHero/AppointmentHero';
 import AvailableAppointment from '../components/AvailableAppoinmnets/AvailableAppointment';
 import Footer from '../components/Footer/Footer';
-import Header from '../components/Header.js/Header';
+import Header from '../components/Header/Header';
 const Appointment = () => {
     const [date , setDate] = useState(new Date())
 
